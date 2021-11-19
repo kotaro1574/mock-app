@@ -31,7 +31,7 @@ const App: FC = () => {
   useEffect(() => {
     const load = async (): Promise<void> => {
       try {
-        const response = await fetch('http://localhost:3001/v1/users/123');
+        const response = await fetch('http://localhost:3000/v1/users/123');
 
         if (!response.ok) {
           throw new Error(`HTTP-Error: ${response.status}`);
